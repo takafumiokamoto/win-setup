@@ -28,7 +28,7 @@ powercfg -setacvalueindex SCHEME_CURRENT SUB_PROCESSOR CPMAXCORES1 100
 #PCI Express 省電力設定無効
 powercfg -setacvalueindex SCHEME_CURRENT 501a4d13-42af-4429-9fd1-a8218c268e20 ee12f906-d277-404b-b6da-e5fa1a576df5 0
 # プロセッサのアイドルを無効
-powercfg -setacvalueindex SCHEME_CURRENT SUB_PROCESSOR IDLEDISABLE 0
+powercfg -setacvalueindex SCHEME_CURRENT SUB_PROCESSOR IDLEDISABLE 1
 # Processor performance time check interval
 powercfg -setacvalueindex SCHEME_CURRENT 54533251-82be-4824-96c1-47b60b740d00 4d2b0152-7d5c-498b-88e2-34345392a2c5 5000
 # 休止状態を無効にする。
