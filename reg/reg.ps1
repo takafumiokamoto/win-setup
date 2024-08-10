@@ -93,3 +93,7 @@ Get-AppxPackage -allusers *Microsoft.XboxGameOverlay* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
 Get-AppxPackage -allusers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
+Write-Host "microsoft sync center"
+reg add "HKLM\SYSTEM\ControlSet\Services\CSC" /v "Start" /t REG_DWORD /d "4" /f | Out-Null
+reg add "HKLM\SYSTEM\ControlSet\Services\CscService" /v "Start" /t REG_DWORD /d "4" /f | Out-Null
+

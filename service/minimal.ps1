@@ -25,6 +25,7 @@ $automatic = @(
     "Wcmsvc"
     "Winmgmt"
     "nsi" # can not disable, break taskbar
+	"Dhcp"
 )
 $manual = @(
     "Appinfo"
@@ -32,7 +33,6 @@ $manual = @(
     "camsvc"
     "DmEnrollmentSvc"
     "msiserver"
-    "netprofm" # can not disable, break taskbar
     "NetSetupSvc"
     "StateRepository"
     "seclogon"
@@ -42,10 +42,10 @@ $manual = @(
     "WManSvc"
     "UdkUserSvc" # needed for windows search from start menu
     "NlaSvc" # needed for network icon in taskbar
+	"Netman" # needed for network icon in taskbar
+	"netprofm" # can not disable, break taskbar
 )
 $disabled = @(
-    "Netman" # currently testing
-    "Dhcp"
     "NgcCtnrSvc"
     "NgcSvc"
     "KeyIso"
