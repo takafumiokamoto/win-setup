@@ -41,11 +41,11 @@ $manual = @(
     "wlpasvc"
     "WManSvc"
     "UdkUserSvc" # needed for windows search from start menu
-    "NlaSvc" # needed for network icon in taskbar
-	"Netman" # needed for network icon in taskbar
 	"netprofm" # can not disable, break taskbar
 )
 $disabled = @(
+    "NlaSvc" # needed for network icon in taskbar
+	"Netman" # needed for network icon in taskbar
     "NgcCtnrSvc"
     "NgcSvc"
     "KeyIso"
